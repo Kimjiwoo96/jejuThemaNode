@@ -77,19 +77,19 @@ function App() {
             <i style={toTopi} class="bi bi-arrow-up-short"></i>
           </div>
         </div>
-        {/* <Festival_p commonData={festivalObj}></Festival_p> */}
+        <Festival_p commonData={festivalObj}></Festival_p>
       </div>
 
-      {/* <Attraction_p></Attraction_p> */}
-      {/* <div className="d-none"> */}
-      <div className="wrap ">
+      <Attraction_p></Attraction_p>
+      <div className="d-none">
+        <div className="wrap ">
 
-        {/* <Video_p></Video_p>
-        <Event_p></Event_p> */}
+          <Video_p></Video_p>
+          <Event_p></Event_p>
+        </div>
+
+        <Tour_p></Tour_p>
       </div>
-
-      {/* <Tour_p></Tour_p> */}
-      {/* </div> */}
       <div className="wrap ">
         <CommentP></CommentP>
       </div>
