@@ -1,0 +1,7 @@
+{
+    "host": "nodejs-008.cafe24.com",
+    "user": "greensn7448",
+    "password": "rmflszja744",
+    "database": "greensn7448",
+    "connectionLimit": 10
+}

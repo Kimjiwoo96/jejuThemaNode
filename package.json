@@ -1,0 +1,30 @@
+{
+  "name": "nodejeju",
+  "version": "1.0.0",
+  "description": "",
+  "main": "web.js",
+  "scripts": {
+    "server": "nodemon ./web.js",
+    "react": "cd jejuthema && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run react\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "greensn7448@jejuthema.cafe24app.com:greensn7448_jejuthema"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "kimjiwoo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3"
+  }
+}

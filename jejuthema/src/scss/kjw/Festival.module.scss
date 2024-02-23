@@ -1,0 +1,65 @@
+/* 기본 스타일 */
+.festivalWrap {
+   
+    align-items: top;
+    justify-content: center;
+}
+
+.festivalWrap > div {
+   
+    box-sizing: border-box;
+    height: auto;   
+   
+    transition: all 0.5s ease 0s;
+}
+.festivalWrap > div:after{
+ content: "";
+ display: block;
+ height:3px;
+ background-color: #D48121;
+ transform: scaleX(0);
+ transform-origin: left;
+ transition: 0.5s;
+ margin:0;
+}
+.festivalWrap > div:hover:after{
+ transform: scaleX(1);
+
+}
+
+// .festivalWrap > div:last-of-type {
+//     margin-right: 0;
+// }
+
+// .festivalWrap > div:hover {
+//     transform: scale(1.1);
+//     box-shadow: 0 5px 15px -7px rgba(0, 0, 0, 1);
+// }
+
+.festivalWrap > div > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.festivalWrap > div > div {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+// /* 반응형 */
+// @media screen and (max-width: 850px) {
+
+//     .festivalWrap{
+//         display: block;
+
+//         > div {
+//             width: 100%; 
+//             margin-right: 0; 
+//             margin-bottom: 30px;
+//         }
+//     }
+    
+// }

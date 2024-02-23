@@ -1,0 +1,113 @@
+$main_font_color: #000f22;
+$main_color1: #0675c1;
+$main_color2: #059b84;
+$main_color3: #d48121;
+$contents_bg_color: #F8F8F8;
+$contents_border_color: #ECECEC;
+
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.hd {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+
+  @media (min-width:991px) { //991 이상일때
+    position: unset;
+
+  }
+
+  .minibanner {
+    background-color: $main_color1;
+    font-weight: 400;
+    font-size: 18px;
+
+    a {
+      line-height: 45px;
+      color: $contents_bg_color;
+      text-decoration: none;
+    }
+  }
+
+  .navbar {
+    padding: 0;
+
+
+
+  }
+}
+
+.logo {
+  img {
+    max-width: 218px;
+    width: 30vw;
+    height: auto;
+  }
+}
+
+
+
+.gnbs {
+  // width: 800px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+
+  li {
+
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    a {
+
+      position: relative;
+      font-family: 'GmarketSansMedium' !important;
+      font-size: 20px;
+      text-decoration: none;
+      color: $main_font_color;
+      display: block;
+      padding: 0;
+      line-height: 3;
+
+      &:hover {
+        color: $main_color3;
+      }
+
+      @media (min-width:991px) {
+
+        line-height: 100px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $main_color3;
+          height: 3px;
+          width: 0;
+          left: 0;
+          bottom: 30px;
+          transition: .3s;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+
+      }
+
+
+    }
+  }
+}

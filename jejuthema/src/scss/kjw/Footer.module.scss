@@ -1,0 +1,43 @@
+
+.fWrap{
+    background-color: #0675C1;
+    *{color: #fff;box-sizing: border-box;}
+    padding: 2%;
+
+
+    .con1{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        div:first-of-type{
+            margin-bottom: 20px;
+        }
+        p:last-of-type{
+            margin-bottom: 0;
+        }
+    
+    }
+    
+    
+    .con2{
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ul{
+            margin-bottom: 0;
+        }
+        .icons{
+            li{
+                margin-right: 4%;
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+

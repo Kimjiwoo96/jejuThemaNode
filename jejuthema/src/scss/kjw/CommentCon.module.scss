@@ -1,0 +1,37 @@
+.commentCon{
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0px;
+
+    .commentinfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        
+        section{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            .userId{
+                margin-bottom: unset;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+
+            >.commentDate{
+                color: #8A8A8A;
+            }
+        }
+
+
+        .delBtn{
+            cursor: pointer;
+        }
+    }
+
+
+}
