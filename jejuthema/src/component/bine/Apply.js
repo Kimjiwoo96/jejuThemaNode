@@ -45,12 +45,23 @@ function Apply({ className }) {
 
 
 
-  const onSubmit = async (data) => {
+
+
+
+  const onSubmit = async (data, e) => {
 
     const myFormDataPost = await myApi("form_apply", data)
     console.log(myFormDataPost)
 
     setDataUp(!dataUp)
+
+    alert("신청이 완료되었습니다.")
+
+
+    e.target.reset();
+
+
+
   }
 
   return (
