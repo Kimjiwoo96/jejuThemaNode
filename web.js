@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const port = 8001
+const port = 8003
 
 const navidata = require("./server/routers/navi");
 
