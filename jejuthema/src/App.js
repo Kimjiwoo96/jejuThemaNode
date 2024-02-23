@@ -4,7 +4,7 @@ import Video_p from "./pages/Video_p";
 import Event_p from "./pages/Event_p";
 import CommentP from "./pages/Comment_p";
 import Quickbtns from "./component/kjw/Quickbtn";
-import Attraction_p from "./pages/Attraction_p";
+import AttractionP from "./pages/Attraction_p";
 import Tour_p from "./pages/Tour_p";
 import Footer from "./pages/Footer";
 import Hd from "./component/bine/Hd";
@@ -80,8 +80,8 @@ function App() {
         <Festival_p commonData={festivalObj}></Festival_p>
       </div>
 
-      <Attraction_p></Attraction_p>
-      <div className="d-none">
+      <AttractionP></AttractionP>
+      <div className="">
         <div className="wrap ">
 
           <Video_p></Video_p>
