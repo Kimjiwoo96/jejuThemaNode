@@ -53,7 +53,7 @@ function Apply({ className }) {
     const myFormDataPost = await myApi("form_apply", data)
     console.log(myFormDataPost)
 
-    setDataUp(!dataUp)
+    setDataUp(true)
 
     alert("신청이 완료되었습니다.")
 
@@ -66,7 +66,7 @@ function Apply({ className }) {
 
   return (
     <div className={`${ApplyStyle.apply} ${className}`}>
-      <div className='container text-center text-lg-end'>
+      <div className='h-1 container text-center text-lg-end'>
         <div className={`${ApplyStyle.wrap} position-relative d-inline-block text-start`}>
           <form onSubmit={handleSubmit(onSubmit)}>
             <h2>신청하기</h2>
