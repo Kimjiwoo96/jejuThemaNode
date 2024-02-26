@@ -1,26 +1,26 @@
 export const naviObj = [
   {
     title: "행사",
-    href: "#Event"
+    href: "event"
   },
   {
     title: "관광명소",
-    href: "#Tourism"
+    href: "tourism"
   },
   {
     title: "홍보영상",
-    href: "#video"
+    href: "video"
   },
   {
     title: "이벤트",
-    href: "#discountEvent"
+    href: "discountEvent"
   },
   {
     title: "투어경로추천",
-    href: "#route"
+    href: "route"
   },
   {
     title: "커뮤니티",
-    href: "#Comments"
+    href: "comments"
   }
 ]

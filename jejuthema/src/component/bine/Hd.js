@@ -1,7 +1,9 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { naviObj } from '../../js/menu';
 import HdStyle from '../../scss/bine/Hd.module.scss';
+
 
 function Hd() {
 
@@ -14,7 +16,7 @@ function Hd() {
       </div>
       <Navbar expand="lg">
         <div className='container-xl px-0 px-lg-4'>
-          <Navbar.Brand href="#home" className={`${HdStyle.logo} ms-3 ms-lg-0 pb-3 pb-lg-0`}>
+          <Navbar.Brand as={Link} to="/" className={`${HdStyle.logo} ms-3 ms-lg-0 pb-3 pb-lg-0`}>
             <img src="/img/logo.png" alt="제주테마여행" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className='border-0' />
@@ -23,7 +25,7 @@ function Hd() {
               {
                 naviObj.map((el, idx) => (
                   <Nav.Item as="li" className={idx < (naviObj.length - 1) ? `px-lg-4` : 'ps-lg-4'} key={idx}>
-                    <Nav.Link href={el.href} className="px-0">
+                    <Nav.Link as={Link} to={el.href} className="px-0">
                       {el.title}
                     </Nav.Link>
                   </Nav.Item>
